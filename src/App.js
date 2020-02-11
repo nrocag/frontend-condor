@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Sass/App.scss'
+import ReactSearchBox from 'react-search-box'
+import Select from 'react-select'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="header-container">
+        <div className="center">
+          <Select /><Select />
+        </div>
+
+        <div className="center">
+          <ReactSearchBox className="search-bar-container" placeholder="Search courses and providers" />
+        </div>
       </header>
-    </div>
+    </div >
   );
 }
 
