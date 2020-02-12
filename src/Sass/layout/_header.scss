@@ -5,7 +5,31 @@
   height: 150px;
 }
 
-.center{
+.header-center{
   display: flex;
   justify-content: center;
+  margin: 8px;
+}
+
+.header-container label{
+  font-size: 18px;
+  color: white;
+  margin: 6px;
+}
+
+.header-container a{
+  font-size: 14px;
+  margin-left: 10px;
+  color: white;
+}
+
+.css-2b097c-container{  
+  margin-left: 10px;
+  color: $primary-color-header;
+  width: 140px;
+}
+
+.css-2b097c-container div{    
+  background-color: $primary-color-header;  
+  color: white !important; 
 }
