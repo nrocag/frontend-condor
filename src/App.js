@@ -9,18 +9,26 @@ function App() {
   return (
     <div>
       <header className="header-container">
-        <div className="header-center">
+        <div className="center margin">
           <label className="label-text">Find CE for a</label> <Select /><Select />
         </div>
 
-        <div className="header-center">
+        <div className="center margin">
           <ReactSearchBox className="search-bar-container" placeholder="Search courses and providers" />
         </div>
 
-        <div className="header-center">
-          <a href="#">COURSES</a><a href="#">PROVIDERS</a>
+        <div className="center">
+          <div className="active"><a href="#">COURSES</a></div> <a href="#">PROVIDERS</a>
         </div>
       </header>
+      <div className="body-container">
+        <div className="center">
+          Filtros
+        </div>
+        <div className="center">
+          Resultados
+        </div>
+      </div>
     </div >
   );
 }

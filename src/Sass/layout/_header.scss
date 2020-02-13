@@ -5,10 +5,8 @@
   height: 150px;
 }
 
-.header-center{
-  display: flex;
-  justify-content: center;
-  margin: 8px;
+.margin {
+  margin: 10px;
 }
 
 .header-container label{
@@ -32,4 +30,9 @@
 .css-2b097c-container div{    
   background-color: $primary-color-header;  
   color: white !important; 
+}
+
+.active {
+  border-bottom: 3px solid #99c736; 
+  padding-bottom: 6px;
 }
