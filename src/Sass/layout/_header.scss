@@ -29,10 +29,14 @@
 
 .css-2b097c-container div{    
   background-color: $primary-color-header;  
-  color: white !important; 
+  color: white; 
 }
 
-.active {
+.active a {
   border-bottom: 3px solid #99c736; 
+  padding-bottom: 6px;
+}
+
+.inactive a {
   padding-bottom: 6px;
 }

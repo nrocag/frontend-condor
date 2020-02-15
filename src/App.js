@@ -1,9 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './Sass/App.scss'
-import ReactSearchBox from 'react-search-box'
-import Select from 'react-select'
-
+import './Sass/App.scss';
+import ReactSearchBox from 'react-search-box';
+import Select from 'react-select';
 
 function App() {
   return (
@@ -18,15 +16,49 @@ function App() {
         </div>
 
         <div className="center">
-          <div className="active"><a href="#">COURSES</a></div> <a href="#">PROVIDERS</a>
+          <div className="active"><a href="#">COURSES</a></div> 
+          <div className="inactive"><a href="#">PROVIDERS</a></div> 
+          
         </div>
       </header>
       <div className="body-container">
-        <div className="center">
-          Filtros
+        <div className="card card-filter">
+          <div className="card body-card-filter">
+            FILTER COURSE RESULTS
+            <br /><br />
+          </div>
+
+          <div className="card body-card-filter">
+            Course type
+            <br /><br />
+            <div>
+              <input type="radio" id="selfPaced" name="courseType" />
+              <label htmlFor="selfPaced">Self paced</label>
+              <br />
+              <input type="radio" id="live" name="courseType" />
+              <label htmlFor="live">Live</label>
+              <br />
+            </div>
+          </div>
+
+          <div className="card body-card-filter">
+            Delivery type
+            <br /><br />
+            <div>
+              <input type="radio" id="anyDeliveryType" name="deliveryType" />
+              <label htmlFor="anyDeliveryType">Any delivery type</label>
+              <br />
+              <input type="radio" id="computerbaseTraining" name="deliveryType" />
+              <label htmlFor="computerbaseTraining">Computer-base training</label>
+              <br />
+            </div>
+          </div>
         </div>
-        <div className="center">
-          Resultados
+        <div className="card card-result">
+          <div className="card">
+            Resultados
+           
+          </div>
         </div>
       </div>
     </div >
