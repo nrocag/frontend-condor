@@ -32,19 +32,88 @@
   display: flex;
   width: 100%;
   .result-imagen {
-    width: 30%;
+    width: 40%;
+  }
+
+  label{ 
+    margin-bottom: 3px;
   }
 }
 
 .result-text {
-  width: 70%;
+  width: 60%;
   .money{
     float: right;
   }
+
+  .result-title{
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: large;
+  }
+
+  .result-state label{
+    color: $color-results-state;
+    border-color: $color-results-state;
+    border-style: solid;
+    border-width: thin;
+    padding: 1px 8px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+  }
+
+  .result-ubication{
+    text-transform: uppercase;
+    color: #e6e2d3;
+    font-size:large;
+  }
+
+  .result-time{
+    color:grey;
+    font-size:smaller;
+    height: 50px;
+    label{
+      margin-top: 12px;
+    }
+    button {
+      background-color: white;
+      font-size:30px;
+      border-radius: 0.15em;
+      border-width: 0.04em;
+      float: right;
+      color:grey;
+      border-color: grey;
+      padding: 2px 11px 0;
+    }
+  }
 }
 
+.result-count {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  .sort{
+    float: right;
+    margin-left:auto; 
+    margin-right:0;
+    text-align: center;
+  }
 
+  label{
+    margin: auto;
+    padding: 6px;
+  }
 
+  .css-2b097c-container{  
+    margin-left: 10px;
+    width: 140px;
+  }
+}
+
+.filter-head{
+  padding: 20px 0px 20px 0px;
+}
 .Collapsible__contentInner input{
   margin-right: 10px;
 }

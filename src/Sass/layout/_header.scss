@@ -3,34 +3,34 @@
   flex-direction: column;
   background-color: $primary-color-header;
   height: 150px;
+  a{
+    font-size: 14px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  label{
+    font-size: 18px;
+    color: white;
+    margin: 6px;
+  }
+
+  .css-2b097c-container{  
+    margin-left: 10px;
+    color: $primary-color-header;
+    width: 140px;
+  }
+
+  .css-2b097c-container div{    
+    background-color: $primary-color-header;  
+    color: white; 
+  }
 }
 
 .margin {
   margin: 10px;
 }
 
-.header-container label{
-  font-size: 18px;
-  color: white;
-  margin: 6px;
-}
-
-.header-container a{
-  font-size: 14px;
-  margin-left: 10px;
-  color: white;
-}
-
-.css-2b097c-container{  
-  margin-left: 10px;
-  color: $primary-color-header;
-  width: 140px;
-}
-
-.css-2b097c-container div{    
-  background-color: $primary-color-header;  
-  color: white; 
-}
 
 .active a {
   border-bottom: 3px solid #99c736; 
