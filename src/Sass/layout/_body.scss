@@ -7,18 +7,18 @@
   transition: 0.3s;
 }
 
+.card:hover {
+  box-shadow: 0 8px 16px 0 $color-box-shadow;
+}
+
 .card-filter {
   flex: 1;
   width: 35%;
   padding: 10px;
-  padding-left: 200px;
+  padding-left: 217px;
 }
 
-.card-filter:hover {
-  box-shadow: 0 8px 16px 0 $color-box-shadow;
-}
-
-.body-card-filter {
+.body-card {
   padding: 2px 16px;
 }
 
@@ -26,4 +26,53 @@
   width: 65%;
   padding: 10px;
   padding-right: 200px;
+}
+
+.result{
+  display: flex;
+  width: 100%;
+  .result-imagen {
+    width: 30%;
+  }
+}
+
+.result-text {
+  width: 70%;
+  .money{
+    float: right;
+  }
+}
+
+
+
+.Collapsible__contentInner input{
+  margin-right: 10px;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  padding: 10px;
+}
+
+.Collapsible__trigger:after {
+  font-family: 'FontAwesome';
+  content: '\f107';
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: transform 300ms; 
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg); 
+}
+
+.Collapsible__trigger.is-disabled {
+  opacity: 0.5;
+  background-color: grey; 
 }
