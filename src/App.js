@@ -46,8 +46,8 @@ class App extends React.Component {
           </div>
 
           <div className="center">
-            <div className="active"><a href="#">COURSES</a></div>
-            <div className="inactive"><a href="#">PROVIDERS</a></div>
+            <div className="active"><a href="page1">COURSES</a></div>
+            <div className="inactive"><a href="page2">PROVIDERS</a></div>
 
           </div>
         </header>
